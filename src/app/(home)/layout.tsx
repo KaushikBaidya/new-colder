@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
 const monaSans = localFont({
-	src: "./fonts/MonaSans-Regular.ttf",
+	src: "../fonts/MonaSans-Regular.ttf",
 	variable: "--font-monaSans-sans",
 	weight: "200 300 400 500 600 700 800 900",
 });
