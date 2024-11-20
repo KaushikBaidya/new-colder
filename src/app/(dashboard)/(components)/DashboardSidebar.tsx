@@ -5,7 +5,7 @@ const DashboardSidebar = () => {
 	return (
 		<div className="w-64 h-screen bg-gray-900 flex items-center text-white">
 			<div className="w-full h-full flex items-center justify-center py-10">
-				<h1 className="text-5xl font-bold">welcome</h1>
+				<h1 className="text-5xl font-bold">Side bar</h1>
 			</div>
 		</div>
 	);
