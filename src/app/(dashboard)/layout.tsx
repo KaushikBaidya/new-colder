@@ -9,7 +9,7 @@ export default function DashboardLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html>
+		<html lang="en" suppressHydrationWarning>
 			<body>
 				<main className="flex h-screen">
 					<DashboardSidebar />
