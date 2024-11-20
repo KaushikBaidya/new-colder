@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/assets/logo.svg";
 
+import { Button } from "@/components/ui/button";
+
 const Header = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -77,15 +79,24 @@ const Header = () => {
 
 						{/* Desktop Sign-in / Sign-up */}
 						<div className="hidden lg:flex lg:items-center lg:space-x-10">
-							<Link href="/signup" className=" ">
-								Sign up
-							</Link>
-							<Link href="/signin" className=" ">
-								Sign in
-							</Link>
-							<Link href="/dashboard" className=" ">
-								Dashboard
-							</Link>
+							<Button
+								asChild
+								variant={"link"}
+								className="text-white font-medium text-base"
+							>
+								<Link href="/auth/signin" className=" ">
+									Sign in
+								</Link>
+							</Button>
+							<Button
+								asChild
+								variant={"link"}
+								className="text-white font-medium text-base"
+							>
+								<Link href="/auth/signup" className=" ">
+									Sign up
+								</Link>
+							</Button>
 						</div>
 					</nav>
 				</div>
@@ -109,10 +120,10 @@ const Header = () => {
 								Pricing
 							</Link>
 							<hr className="border-gray-200" />
-							<Link href="#" className=" ">
+							<Link href="/auth/signup" className=" ">
 								Sign up
 							</Link>
-							<Link href="#" className=" ">
+							<Link href="/auth/signin" className=" ">
 								Sign in
 							</Link>
 						</div>
