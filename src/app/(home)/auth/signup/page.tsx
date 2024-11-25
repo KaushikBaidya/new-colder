@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { FaGoogle, FaGithub } from "react-icons/fa6";
+import SignupForm from "./_components/SignupForm";
 
 const SignUp: React.FC = () => {
 	return (
@@ -9,7 +10,8 @@ const SignUp: React.FC = () => {
 				<h1 className="text-3xl font-bold text-center flex items-center justify-center gap-5">
 					Sign Up
 				</h1>
-				<form noValidate className="space-y-6">
+				<SignupForm />
+				{/* <form noValidate className="space-y-6">
 					<div className="space-y-1 text-lg">
 						<label htmlFor="username" className="block text-gray-600">
 							Username
@@ -42,7 +44,7 @@ const SignUp: React.FC = () => {
 					<button className="block w-full p-3 text-center rounded-sm text-gray-50 bg-violet-600 hover:bg-violet-700">
 						Sign up
 					</button>
-				</form>
+				</form> */}
 				<div className="flex items-center pt-4 space-x-1">
 					<div className="flex-1 h-px sm:w-16 bg-gray-300"></div>
 					<p className="px-3 text-lg text-gray-600">

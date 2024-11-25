@@ -10,6 +10,9 @@ const DashboardTopbar = () => {
 				<Link href="/" className=" ">
 					home
 				</Link>
+				<Link href="/dashboard/tasks" className=" ">
+					task
+				</Link>
 			</div>
 		</div>
 	);
